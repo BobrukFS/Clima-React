@@ -1,6 +1,6 @@
 
 import Banner from '../banner/Banner'
-import './Clima.css'
+
 
 
 
