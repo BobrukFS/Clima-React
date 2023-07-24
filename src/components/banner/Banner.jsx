@@ -1,5 +1,5 @@
 
-function Banner({nombre, temperatura}) {
+function Banner({nombre, temperatura, pais, hora}) {
     let icono;
     let tempCelsius = Math.round(temperatura - 273.15);
 
@@ -15,11 +15,11 @@ function Banner({nombre, temperatura}) {
         <div className="banner">
             <div className="banner__container">
                 <img className="banner__icon"  src={icono} alt="icono de clima" />
-                <p className="banner__temp">13º</p>
-                <p className="banner__name">{nombre}</p>
+                <p className="banner__temp">{tempCelsius}º</p>
+                <p className="banner__name">{nombre}, {pais}</p>
             </div>
             <div className="banner__container">
-                <p className="banner__time">7:00 PM</p>
+                <p className="banner__time">{hora}</p>
                 <p className="banner__day">Sunset Time, Monday</p>
             </div>
            
