@@ -1,13 +1,16 @@
 
-function Banner() {
+function Banner({nombre}) {
     return (  
-        <div>
-           <div>
-            
-           </div>
-           <div>
-            
-           </div>
+        <div className="banner">
+            <div className="banner__container">
+               
+                <p></p>
+                <p></p>
+            </div>
+            <div className="banner__container">
+
+            </div>
+           
         </div>
     );
 }
