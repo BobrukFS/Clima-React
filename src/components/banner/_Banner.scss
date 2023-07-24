@@ -1,0 +1,50 @@
+@use 'src/Styles/base/_settings.scss' as *;
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-image: url("src/assets/Scene-7.jpg");
+    background-size: cover;
+    height: 20rem;
+    padding: 2rem;
+    font-family: map-get($map: $fuentes, $key: primaria);
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        color: white;
+
+        &:nth-child(2){
+            align-items: end;
+        }
+    }
+
+   
+
+    &__icon{
+        width: 4rem;
+        margin-left: -.6rem;
+    }
+
+    &__temp{
+        font-size: 7rem;
+        text-align: start;
+        margin-left: -1rem;
+    }
+
+    &__name{
+        font-size: 1.6rem;
+    }
+
+    &__time{
+        font-size: 1.6rem;
+    }
+
+    &__day{
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        width: fit-content;
+    }
+}
