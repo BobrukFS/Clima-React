@@ -1,11 +1,17 @@
+
+import Banner from '../banner/Banner'
 import './Clima.css'
+
+
 
 const Clima = () => {
  
-
-    return <div>
-        <p>Hola Mundo</p>
-    </div>
+    return <>
+    
+        <Banner></Banner>
+    
+    
+    </>
 }
 
 export default Clima
